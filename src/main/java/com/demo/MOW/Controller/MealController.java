@@ -53,7 +53,7 @@ public class MealController {
     @PostMapping("/{id}")
     public ResponseEntity<?> deleteMeals(@PathVariable long id) {
     	mealService.deleteMealById(id);
-    	return ResponseEntity.ok(new MessageResponse("Meal deleted successfully!"));
+    	return ResponseEntity.ok(new MessageResponse("Meal is deleted successfully!"));
     }
     
 }
